@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadCards()">
+
+    <button id="newCardBtn" class="newCardBtn" onclick="newCard()">New Card +</button>
+
+    <div id="newCardData" class="newCardData">
+        <button id="x" class="x" onclick="x()">x</button>
+        <input type="text" id="questionInput" class="questionInput" placeholder="Enter question">
+        <input type="text" id="answerInput" class="answerInput" placeholder="Enter answer">
+        <button id="addCardBtn" class="addCardBtn" onclick="addCard()">Add Card</button>
+        <h1 class="tip">Tip: Click cards to flip them</h1>    
+    </div>
+    <div id="flashcardContainer" onclick="flipCard()" class="flashcardContainer"></div>
+    <script src="script.js"></script>
+</html>
